@@ -7,8 +7,7 @@ function Home() {
         <div className="home">
             <img 
               className="home__image"
-              src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
-                 
+              src="https://www.amazon.in/images/G/31/img17/AmazonDevices/2019/pushnotification/PD_GW_Teaser-PC-hero_2x._CB409675246_.jpg"
               alt=""/>
 
               {/* Product id, title, price, rating, img */}
@@ -51,14 +50,9 @@ function Home() {
                   image="https://www.amazon.in/images/I/71qwnRAujEL._UL1500_.jpg"
                 />
               </div>
-              <div className="home__workFromHome home__row">
-                <Product 
-                  id={39856482}
-                  title="Work From Home Combo with Flexibe Chair - A Desk and A Book Shelf"
-                  price={1999.00}
-                  rating={5}
-                  image="https://www.amazon.in/images/G/31/IMG19/Furniture/WFH/Header/PC_Banner_1500x350.gif"
-                />
+            {/* THE GIF */}
+              <div className="home__gif">
+                <img src="https://www.amazon.in/images/G/31/IMG19/Furniture/WFH/Header/PC_Banner_1500x350.gif" alt=""/>
               </div>
               <div className="home__row">
                 <Product 
@@ -82,6 +76,9 @@ function Home() {
                   rating={4}
                   image="https://www.amazon.in/images/I/81Y2RsCa34L._SL1500_.jpg"
                 />
+              </div>
+              <div className="home__gif home__bottomAd">
+                <img src="https://www.amazon.in/images/G/31/img17/AmazonBusiness/Anniversary2019/B2Ccustomer_Strip_1500_100_0705_1._CB1588869535_.jpg" alt=""/>
               </div>
               {/* Product  */}
         </div>
