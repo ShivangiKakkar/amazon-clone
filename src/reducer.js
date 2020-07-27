@@ -1,13 +1,6 @@
+
 export const initialState = {
-  basket: [
-    {
-      id: "3254354345",
-      title:"New Apple iPad Pro (12.9-inch, Wi-Fi, 128 GB) - Silver (4th Generation)",
-      price: 598.99,
-      rating: 4,
-      image: "https://www.amazon.com/images/I/81Pi4nhjlwL._AC_SL1500_.jpg"
-    },
-  ],
+  basket: [],
   user: null,
 };
 
@@ -17,6 +10,11 @@ export const getBasketTotal = (basket) =>
 const reducer = (state, action) => {
     console.log(action);
     switch(action.type) {
+        case 'SET_USER' :
+          return {
+            ...state,
+            user: action.user
+          }
         case 'ADD_TO_BASKET':
         //Logic to add items into the basket
           return { 
